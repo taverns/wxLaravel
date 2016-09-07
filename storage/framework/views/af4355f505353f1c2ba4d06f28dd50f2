@@ -1,0 +1,8 @@
+<xml>
+    <ToUserName><![CDATA[<?php echo e($message->FromUserName); ?>]]></ToUserName>
+    <FromUserName><![CDATA[<?php echo e($message->ToUserName); ?>]]></FromUserName>
+    <CreateTime><?php echo e(time()); ?></CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[<?php echo e('From:'.$message->FromUserName.'To:'.$message->ToUserName.'Msg:'.$message->Content); ?>]]></Content>
+</xml>
+
